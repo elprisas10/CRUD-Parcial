@@ -19,6 +19,25 @@ namespace Parcial_2
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
+            AdminPerfil menu = new AdminPerfil();
+             menu.Show();
+            this.Hide();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            UsuarioPerfil usuarioPerfil = new UsuarioPerfil();
+            usuarioPerfil.Show();
+            this.Hide();
+        }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
 
         }
     }

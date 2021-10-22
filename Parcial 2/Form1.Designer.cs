@@ -67,6 +67,7 @@ namespace Parcial_2
             this.metroLink1.TabIndex = 2;
             this.metroLink1.Text = "Registrarse";
             this.metroLink1.UseSelectable = true;
+            this.metroLink1.Click += new System.EventHandler(this.metroLink1_Click);
             // 
             // metroLabel3
             // 
@@ -106,6 +107,7 @@ namespace Parcial_2
             this.txtUsuario.UseSelectable = true;
             this.txtUsuario.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtUsuario.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtUsuario.Click += new System.EventHandler(this.txtUsuario_Click);
             // 
             // txtContrasena
             // 
@@ -164,6 +166,7 @@ namespace Parcial_2
             this.btnSalir.TabIndex = 9;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseSelectable = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Form1
             // 

@@ -64,6 +64,7 @@ namespace Parcial_2
             this.metroTile2.TabIndex = 2;
             this.metroTile2.Text = "Usuarios";
             this.metroTile2.UseSelectable = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroTile3
             // 
@@ -74,6 +75,7 @@ namespace Parcial_2
             this.metroTile3.TabIndex = 3;
             this.metroTile3.Text = "Registros";
             this.metroTile3.UseSelectable = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
             // 
             // Menu
             // 
@@ -86,6 +88,7 @@ namespace Parcial_2
             this.Controls.Add(this.metroLabel1);
             this.Name = "Menu";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

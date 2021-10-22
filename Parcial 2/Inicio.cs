@@ -29,12 +29,42 @@ namespace Parcial_2
 
         public MySqlDataReader getAll()
         {
-            string query = "SELECT ID,Nombre,Apellido,Correo,FechaRegistro,NombreUsuario,Contrasena FROM parcial";
+            string query = "SELECT * FROM parcial WHERE ID<>1";
 
             return crud.select(query);
         }
 
-     
+        public Boolean Registro()
+        {
+            string query = "INSERT INTO parcial(ID, Nombre, Apellido, Correo, FechaRegistro, Usuario, Contrasena)" +
+            "VALUES ('" + _ID + "','" + _Nombre + "', '" + _Apellido + "', '" + _Correo + "', '" + _Registro + "', '" + _Usuario + "', '" + _Contra + "')";
+            crud.executeQuery(query);
+            return true;
+        }
+
+        public Boolean Ingresar()
+        {
+            string query = "SELECT * FROM parcial WHERE NombreUsuario='" + _Usuario + "' CONTRASEÑA='" + _Contra + "'";
+            if (crud.select(query).HasRows)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public MySqlDataReader getAllLogs()
+        {
+            string query = "SELECT * FROM NombreUsuario WHERE ID <> 0 ";
+
+
+            return crud.select(query);
+        }
+
+        public void SesionInicio()
+        {
+            string SesionInicio = "INSERT INTO usuarios(ID, Nombre, Tiempo) VALUES('" + _ID + "','" + _Usuario + "', '" + _Registro + DateTime.Now.ToString("dddd, dd MMM yyy HH:mm:ss") + "')";
+            crud.executeQuery(SesionInicio);
+        }
 
     }
 }
