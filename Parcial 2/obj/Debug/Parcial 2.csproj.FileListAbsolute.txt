@@ -34,3 +34,10 @@ C:\Users\Pc\Desktop\Proyectos\Parcial 2\Parcial 2\obj\Debug\Parcial 2.csproj.Cor
 C:\Users\Pc\Desktop\Proyectos\Parcial 2\Parcial 2\obj\Debug\Parcial 2.csproj.CopyComplete
 C:\Users\Pc\Desktop\Proyectos\Parcial 2\Parcial 2\obj\Debug\Parcial 2.exe
 C:\Users\Pc\Desktop\Proyectos\Parcial 2\Parcial 2\obj\Debug\Parcial 2.pdb
+C:\Users\Pc\Desktop\Proyectos\Parcial 2\Parcial 2\obj\Debug\Parcial_2.AdminPerfil.resources
+C:\Users\Pc\Desktop\Proyectos\Parcial 2\Parcial 2\obj\Debug\Parcial_2.CuentaN.resources
+C:\Users\Pc\Desktop\Proyectos\Parcial 2\Parcial 2\obj\Debug\Parcial_2.Menu.resources
+C:\Users\Pc\Desktop\Proyectos\Parcial 2\Parcial 2\obj\Debug\Parcial_2.MenuUsuario.resources
+C:\Users\Pc\Desktop\Proyectos\Parcial 2\Parcial 2\obj\Debug\Parcial_2.Registros.resources
+C:\Users\Pc\Desktop\Proyectos\Parcial 2\Parcial 2\obj\Debug\Parcial_2.UsuarioPerfil.resources
+C:\Users\Pc\Desktop\Proyectos\Parcial 2\Parcial 2\obj\Debug\Parcial_2.UsuarioR.resources

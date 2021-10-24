@@ -14,6 +14,7 @@ namespace Parcial_2
     public partial class Form1 : Form
     {
         public string _Contra { get; set; }
+      
         public Form1()
         {
             InitializeComponent();
@@ -38,15 +39,18 @@ namespace Parcial_2
 
             }
 
-            Inicio cuenta = new Inicio();
-            cuenta._Contra = txtContrasena.Text;
+            Inicio inicio = new Inicio();
+            inicio._Contra = txtContrasena.Text;
+            inicio._Usuario = txtUsuario.Text;
 
-            if (cuenta.Ingresar())
+            if (inicio.Ingresar())
             {
                 MetroFramework.MetroMessageBox.Show(this,
                    "BIENVENIDO", "USUARIO YA REGISTRADO", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                cuenta.SesionInicio();
+                inicio.SesionInicio();
+             
                 _Contra = txtContrasena.Text;
+                
                 MenuUsuario menuUsuario = new MenuUsuario();
                 menuUsuario.Show();
                 this.Hide();
@@ -65,7 +69,7 @@ namespace Parcial_2
                 this.Hide();
             }
 
-            else if (txtUsuario.Text == "123")
+            else if (txtUsuario.Text == "Admin")
             {
                 Menu Menu = new Menu();
                 Menu.Show();
@@ -93,6 +97,11 @@ namespace Parcial_2
 
                 Close();
             }
+        }
+
+        private void txtContrasena_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

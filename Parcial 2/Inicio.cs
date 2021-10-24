@@ -29,22 +29,22 @@ namespace Parcial_2
 
         public MySqlDataReader getAll()
         {
-            string query = "SELECT * FROM parcial WHERE ID<>1";
+            string query = "SELECT * from registro WHERE ID<>1";
 
             return crud.select(query);
         }
 
         public Boolean Registro()
         {
-            string query = "INSERT INTO parcial(ID, Nombre, Apellido, Correo, FechaRegistro, Usuario, Contrasena)" +
-            "VALUES ('" + _ID + "','" + _Nombre + "', '" + _Apellido + "', '" + _Correo + "', '" + _Registro + "', '" + _Usuario + "', '" + _Contra + "')";
+            string query = "INSERT INTO registro(Nombre, Apellido, Correo, FechaRegistro, NombreUsuario, Contrasena)" +
+            "VALUES ('" + _Nombre + "', '" + _Apellido + "', '" + _Correo + "', '" + _Registro + "', '" + _Usuario + "', '" + _Contra + "')";
             crud.executeQuery(query);
             return true;
         }
 
         public Boolean Ingresar()
         {
-            string query = "SELECT * FROM parcial WHERE NombreUsuario='" + _Usuario + "' CONTRASEÑA='" + _Contra + "'";
+            string query = "SELECT * FROM registro WHERE NombreUsuario='" + _Usuario + "'AND Contrasena='" + _Contra + "'";
             if (crud.select(query).HasRows)
             {
                 return true;
@@ -66,5 +66,45 @@ namespace Parcial_2
             crud.executeQuery(SesionInicio);
         }
 
+        public MySqlDataReader getbyID()
+        {
+            string query = "SELECT * FROM registro  WHERE ID='" + _ID + "' ";
+            return crud.select(query);
+        }
+        public MySqlDataReader getLog()
+        {
+            string query = " SELECT * FROM usuarios";
+
+            return crud.select(query);
+        }
+        public MySqlDataReader getLogWithoutAdmin()
+        {
+            string query = "SELECT * FROM usuarios WHERE Nombre <> 'Admin' ";
+            return crud.select(query);
+        }
+        public MySqlDataReader getAlldatos()
+        {
+            string query = "SELECT Nombre, Apellido,Correo,FechaRegistro, Usuario, Contrasena FROM registro ";
+
+
+            return crud.select(query);
+        }
+        public MySqlDataReader LogWithoutAdmin()
+        {
+            string query = "SELECT * FROM registro  WHERE NombreUsuario <> 'Admin' ";
+            return crud.select(query);
+
+
+        }
+
+
+        public MySqlDataReader perfil()
+        {
+            string query = "SELECT * FROM `registro` ";
+
+
+            return crud.select(query);
+        }
     }
 }
+

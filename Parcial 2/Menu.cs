@@ -31,14 +31,16 @@ namespace Parcial_2
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-            UsuarioPerfil usuarioPerfil = new UsuarioPerfil();
-            usuarioPerfil.Show();
+            Registros registros = new Registros();
+            registros.Show();
             this.Hide();
         }
 
         private void metroTile3_Click(object sender, EventArgs e)
         {
-
+            UsuarioR usuarioR = new UsuarioR();
+            usuarioR.Show();
+            this.Hide();
         }
     }
 }

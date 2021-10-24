@@ -186,6 +186,9 @@
     <EmbeddedResource Include="UsuarioPerfil.resx">
       <DependentUpon>UsuarioPerfil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioR.resx">
+      <DependentUpon>UsuarioR.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

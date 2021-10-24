@@ -19,13 +19,13 @@ namespace Parcial_2
 
         private void MenuUsuario_Load(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            MenuUsuario menuUsuario = new MenuUsuario();
-            menuUsuario.Show();
+            UsuarioPerfil usuarioPerfil = new UsuarioPerfil();
+            usuarioPerfil.Show();
             this.Hide();
 
         }

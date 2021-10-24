@@ -29,50 +29,53 @@ namespace Parcial_2
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.metroToggle1 = new MetroFramework.Controls.MetroToggle();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnMenu = new MetroFramework.Controls.MetroButton();
+            this.dgt2 = new System.Windows.Forms.DataGridView();
+            this.Int1 = new MetroFramework.Controls.MetroToggle();
+            ((System.ComponentModel.ISupportInitialize)(this.dgt2)).BeginInit();
             this.SuspendLayout();
             // 
-            // metroButton1
+            // btnMenu
             // 
-            this.metroButton1.Location = new System.Drawing.Point(233, 329);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(159, 23);
-            this.metroButton1.TabIndex = 0;
-            this.metroButton1.Text = "metroButton1";
-            this.metroButton1.UseSelectable = true;
+            this.btnMenu.Location = new System.Drawing.Point(233, 329);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(159, 23);
+            this.btnMenu.TabIndex = 0;
+            this.btnMenu.Text = "Volver al menu";
+            this.btnMenu.UseSelectable = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // dataGridView1
+            // dgt2
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(517, 266);
-            this.dataGridView1.TabIndex = 1;
+            this.dgt2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgt2.Location = new System.Drawing.Point(32, 22);
+            this.dgt2.Name = "dgt2";
+            this.dgt2.Size = new System.Drawing.Size(517, 266);
+            this.dgt2.TabIndex = 1;
             // 
-            // metroToggle1
+            // Int1
             // 
-            this.metroToggle1.AutoSize = true;
-            this.metroToggle1.Location = new System.Drawing.Point(599, 123);
-            this.metroToggle1.Name = "metroToggle1";
-            this.metroToggle1.Size = new System.Drawing.Size(80, 17);
-            this.metroToggle1.TabIndex = 2;
-            this.metroToggle1.Text = "Off";
-            this.metroToggle1.UseSelectable = true;
+            this.Int1.AutoSize = true;
+            this.Int1.Location = new System.Drawing.Point(599, 123);
+            this.Int1.Name = "Int1";
+            this.Int1.Size = new System.Drawing.Size(80, 17);
+            this.Int1.TabIndex = 2;
+            this.Int1.Text = "Off";
+            this.Int1.UseSelectable = true;
+            this.Int1.CheckedChanged += new System.EventHandler(this.Int1_CheckedChanged);
             // 
             // Registros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.metroToggle1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.Int1);
+            this.Controls.Add(this.dgt2);
+            this.Controls.Add(this.btnMenu);
             this.Name = "Registros";
             this.Text = "Registros";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Registros_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgt2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,8 +83,8 @@ namespace Parcial_2
 
         #endregion
 
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private MetroFramework.Controls.MetroToggle metroToggle1;
+        private MetroFramework.Controls.MetroButton btnMenu;
+        private System.Windows.Forms.DataGridView dgt2;
+        private MetroFramework.Controls.MetroToggle Int1;
     }
 }

@@ -138,6 +138,7 @@ namespace Parcial_2
             this.txtContrasena.UseSelectable = true;
             this.txtContrasena.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtContrasena.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtContrasena.Click += new System.EventHandler(this.txtContrasena_Click);
             // 
             // btnIngresar
             // 
