@@ -65,5 +65,10 @@ namespace Parcial_2
         {
 
         }
+
+        private void dgtINew_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

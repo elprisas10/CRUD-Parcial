@@ -82,5 +82,10 @@ namespace Parcial_2
             form1.Show();
             this.Hide();
         }
+
+        private void txtNombre_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

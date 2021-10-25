@@ -24,8 +24,8 @@ namespace Parcial_2
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            UsuarioPerfil usuarioPerfil = new UsuarioPerfil();
-            usuarioPerfil.Show();
+            AdminPerfil admin = new AdminPerfil();
+            admin.Show();
             this.Hide();
 
         }

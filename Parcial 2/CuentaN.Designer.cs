@@ -29,6 +29,7 @@ namespace Parcial_2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CuentaN));
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -45,70 +46,107 @@ namespace Parcial_2
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(326, 9);
+            this.metroLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.ForeColor = System.Drawing.Color.Cyan;
+            this.metroLabel1.Location = new System.Drawing.Point(258, 9);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(91, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(120, 25);
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Cuenta Nueva";
+            this.metroLabel1.UseCustomBackColor = true;
+            this.metroLabel1.UseCustomForeColor = true;
+            this.metroLabel1.UseStyleColors = true;
             // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(39, 55);
+            this.metroLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.metroLabel2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.metroLabel2.Location = new System.Drawing.Point(289, 55);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(59, 19);
             this.metroLabel2.TabIndex = 1;
             this.metroLabel2.Text = "Nombre";
+            this.metroLabel2.UseCustomBackColor = true;
+            this.metroLabel2.UseCustomForeColor = true;
+            this.metroLabel2.UseStyleColors = true;
             // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(187, 55);
+            this.metroLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.metroLabel3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.metroLabel3.Location = new System.Drawing.Point(289, 133);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(58, 19);
             this.metroLabel3.TabIndex = 2;
             this.metroLabel3.Text = "Apellido";
+            this.metroLabel3.UseCustomBackColor = true;
+            this.metroLabel3.UseCustomForeColor = true;
+            this.metroLabel3.UseStyleColors = true;
             // 
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(326, 55);
+            this.metroLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.metroLabel4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.metroLabel4.Location = new System.Drawing.Point(296, 226);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(51, 19);
             this.metroLabel4.TabIndex = 3;
             this.metroLabel4.Text = "Correo";
+            this.metroLabel4.UseCustomBackColor = true;
+            this.metroLabel4.UseCustomForeColor = true;
+            this.metroLabel4.UseStyleColors = true;
             // 
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(461, 55);
+            this.metroLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.metroLabel5.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.metroLabel5.Location = new System.Drawing.Point(258, 312);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(126, 19);
             this.metroLabel5.TabIndex = 4;
             this.metroLabel5.Text = "Nombre de Usuario";
+            this.metroLabel5.UseCustomBackColor = true;
+            this.metroLabel5.UseCustomForeColor = true;
+            this.metroLabel5.UseStyleColors = true;
             // 
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(670, 55);
+            this.metroLabel6.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.metroLabel6.Location = new System.Drawing.Point(288, 399);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(75, 19);
             this.metroLabel6.TabIndex = 5;
             this.metroLabel6.Text = "Contraseña";
+            this.metroLabel6.UseCustomBackColor = true;
+            this.metroLabel6.UseCustomForeColor = true;
+            this.metroLabel6.UseStyleColors = true;
             // 
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(12, 166);
+            this.metroLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.metroLabel7.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.metroLabel7.Location = new System.Drawing.Point(239, 491);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(177, 19);
             this.metroLabel7.TabIndex = 6;
             this.metroLabel7.Text = "Confirmacion de Contraseña";
+            this.metroLabel7.UseCustomBackColor = true;
+            this.metroLabel7.UseCustomForeColor = true;
+            this.metroLabel7.UseStyleColors = true;
             // 
             // txtNombre
             // 
@@ -125,7 +163,7 @@ namespace Parcial_2
             this.txtNombre.CustomButton.UseSelectable = true;
             this.txtNombre.CustomButton.Visible = false;
             this.txtNombre.Lines = new string[0];
-            this.txtNombre.Location = new System.Drawing.Point(12, 93);
+            this.txtNombre.Location = new System.Drawing.Point(259, 93);
             this.txtNombre.MaxLength = 32767;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.PasswordChar = '\0';
@@ -139,6 +177,7 @@ namespace Parcial_2
             this.txtNombre.UseSelectable = true;
             this.txtNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtNombre.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombre.Click += new System.EventHandler(this.txtNombre_Click);
             // 
             // txtApellido
             // 
@@ -155,7 +194,7 @@ namespace Parcial_2
             this.txtApellido.CustomButton.UseSelectable = true;
             this.txtApellido.CustomButton.Visible = false;
             this.txtApellido.Lines = new string[0];
-            this.txtApellido.Location = new System.Drawing.Point(166, 93);
+            this.txtApellido.Location = new System.Drawing.Point(259, 175);
             this.txtApellido.MaxLength = 32767;
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.PasswordChar = '\0';
@@ -185,7 +224,7 @@ namespace Parcial_2
             this.txtCorreo.CustomButton.UseSelectable = true;
             this.txtCorreo.CustomButton.Visible = false;
             this.txtCorreo.Lines = new string[0];
-            this.txtCorreo.Location = new System.Drawing.Point(313, 93);
+            this.txtCorreo.Location = new System.Drawing.Point(259, 262);
             this.txtCorreo.MaxLength = 32767;
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.PasswordChar = '\0';
@@ -215,7 +254,7 @@ namespace Parcial_2
             this.txtUsurio.CustomButton.UseSelectable = true;
             this.txtUsurio.CustomButton.Visible = false;
             this.txtUsurio.Lines = new string[0];
-            this.txtUsurio.Location = new System.Drawing.Point(461, 93);
+            this.txtUsurio.Location = new System.Drawing.Point(259, 355);
             this.txtUsurio.MaxLength = 32767;
             this.txtUsurio.Name = "txtUsurio";
             this.txtUsurio.PasswordChar = '\0';
@@ -245,10 +284,10 @@ namespace Parcial_2
             this.txtContra.CustomButton.UseSelectable = true;
             this.txtContra.CustomButton.Visible = false;
             this.txtContra.Lines = new string[0];
-            this.txtContra.Location = new System.Drawing.Point(646, 93);
+            this.txtContra.Location = new System.Drawing.Point(259, 442);
             this.txtContra.MaxLength = 32767;
             this.txtContra.Name = "txtContra";
-            this.txtContra.PasswordChar = '\0';
+            this.txtContra.PasswordChar = '*';
             this.txtContra.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtContra.SelectedText = "";
             this.txtContra.SelectionLength = 0;
@@ -275,10 +314,10 @@ namespace Parcial_2
             this.txtConfirmar.CustomButton.UseSelectable = true;
             this.txtConfirmar.CustomButton.Visible = false;
             this.txtConfirmar.Lines = new string[0];
-            this.txtConfirmar.Location = new System.Drawing.Point(12, 200);
+            this.txtConfirmar.Location = new System.Drawing.Point(259, 526);
             this.txtConfirmar.MaxLength = 32767;
             this.txtConfirmar.Name = "txtConfirmar";
-            this.txtConfirmar.PasswordChar = '\0';
+            this.txtConfirmar.PasswordChar = '*';
             this.txtConfirmar.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtConfirmar.SelectedText = "";
             this.txtConfirmar.SelectionLength = 0;
@@ -292,38 +331,66 @@ namespace Parcial_2
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(377, 200);
+            this.metroButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.metroButton1.ForeColor = System.Drawing.Color.BlueViolet;
+            this.metroButton1.Location = new System.Drawing.Point(264, 583);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(120, 41);
             this.metroButton1.TabIndex = 13;
             this.metroButton1.Text = "Crear La Cuenta!";
+            this.metroButton1.UseCustomBackColor = true;
+            this.metroButton1.UseCustomForeColor = true;
             this.metroButton1.UseSelectable = true;
+            this.metroButton1.UseStyleColors = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(195, 399);
+            this.metroButton2.ForeColor = System.Drawing.Color.Purple;
+            this.metroButton2.Location = new System.Drawing.Point(486, 51);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(75, 23);
             this.metroButton2.TabIndex = 14;
             this.metroButton2.Text = "Ingresar";
+            this.metroButton2.UseCustomBackColor = true;
+            this.metroButton2.UseCustomForeColor = true;
             this.metroButton2.UseSelectable = true;
+            this.metroButton2.UseStyleColors = true;
             this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // metroLabel8
             // 
             this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(62, 399);
+            this.metroLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.metroLabel8.ForeColor = System.Drawing.Color.Lime;
+            this.metroLabel8.Location = new System.Drawing.Point(464, 15);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(127, 19);
             this.metroLabel8.TabIndex = 15;
             this.metroLabel8.Text = "Ya tiene una cuenta?";
+            this.metroLabel8.UseCustomBackColor = true;
+            this.metroLabel8.UseCustomForeColor = true;
+            this.metroLabel8.UseStyleColors = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(156, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // CuentaN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(642, 648);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.metroLabel8);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
@@ -340,9 +407,11 @@ namespace Parcial_2
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
+            this.DoubleBuffered = true;
             this.Name = "CuentaN";
             this.Text = "CuentaN";
             this.Load += new System.EventHandler(this.CuentaN_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,5 +435,6 @@ namespace Parcial_2
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroLabel metroLabel8;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

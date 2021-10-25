@@ -84,7 +84,7 @@ namespace Parcial_2
         }
         public MySqlDataReader getAlldatos()
         {
-            string query = "SELECT Nombre, Apellido,Correo,FechaRegistro, Usuario, Contrasena FROM registro ";
+            string query = "SELECT Nombre, Apellido,Correo,FechaRegistro, NombreUsuario, Contrasena FROM registro ";
 
 
             return crud.select(query);
@@ -97,6 +97,13 @@ namespace Parcial_2
 
         }
 
+
+        public MySqlDataReader LogUsuary()
+        {
+            string query = "SELECT Nombre, Correo, NombreUsuario,FechaRegistro FROM registro ";
+
+            return crud.select(query);
+        }
 
         public MySqlDataReader perfil()
         {
